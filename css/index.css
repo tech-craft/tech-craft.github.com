@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+}
+body{
+    font-family: "Calibri","微软雅黑","Microsoft YaHei";
+    padding-top: 80px;
+}
+
+
+/*navigation*/
+#nav-enroll{
+    color: #00E3DF !important;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.navigation-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px;
+}
+
+.navigation-link:before {
+    left: 0;
+}
+
+.navigation-link:hover:before {
+    width: 100%;
+}
+
+.navigation-link:before {
+    -webkit-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+}
+
+header ul {
+    font-size: 15px;
+}
+
+
+/*about*/
+#about{
+    height: 1646px;
+}
+
+.bg-about{
+    background-image:url("../image/about-bg.png");
+    height: 1646px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -80px;
+    position: relative;
+
+}
+
+img#about-icon{
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 93px;
+
+}
+
+#about h1{
+    font-size: 60px;
+    margin-left: 7px;
+    margin-top: 376px;
+    position: absolute;
+}
+
+#about h3{
+    font-size: 24px;
+    margin-left: 7px;
+    margin-top: 460px;
+    position: absolute;
+}
+
+#about img#about-cobrand{
+    margin-left: 7px;
+    margin-top: 535px;
+    position: absolute;
+}
+
+#about h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin-bottom:20px;
+}
+#about p{
+    font-size: 14px;
+}
+div.aboutTC{
+    margin-top:790px;
+    position: absolute;
+    width: 1170px;
+    padding: 15px;
+}
+
+div.about-schedule{
+    margin-top:1370px;
+    position: absolute;
+    width: 1170px;
+}
+
+div.about-schedule button{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #00E3DF;
+    background: none;
+    color:#00E3DF;
+    float: right;
+    margin-right: 39px;
+    margin-top: 20px;
+}
+
+div.about-schedule img{
+    margin-left: 41px;
+}
+/*wrapper*/
+.universal-bg{
+    background-image: url(../image/universal-bg.png);
+    background-repeat: repeat-y;
+    background-position-x: center;
+
+}
+
+/*detail*/
+section#detail h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin-bottom:20px;
+}
+/*tab*/
+
+
+.tabs li {
+    text-align: center;
+    border-top:1px solid #E5E5E5;
+    border-left:1px solid #E5E5E5;
+    border-right:1px solid #E5E5E5;
+    border-bottom: 4px solid #E5E5E5;
+    /*margin: 0 0;*/
+    display: inline-block;
+    background:white;
+}
+
+.tabs a {
+    color: #ccc;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+.tabs li:hover {
+    color: #cccccc;
+    background: white;
+    border-bottom: 4px solid #00E3DF;
+}
+
+.tabs li:hover a {
+    color: #cccccc;
+}
+
+.active {
+    background: white;
+    border-bottom: 4px solid #00E3DF !important;
+}
+
+.active a {
+    color: black ;
+}
+
+#challenge .left{
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+#challenge .right{
+    font-size:14px;
+    margin-top: 30px;
+}
+#challenge img{
+    margin:30px 0 ;
+    text-align: center;
+}
+
+#demoDay .left{
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+#demoDay .right{
+    font-size:14px;
+    margin-top: 30px;
+}
+
+#demoDay .left-first{
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+#demoDay .right-first img{
+    margin: 20px;
+}
+
+#enroll .left{
+    margin-top: 25px;
+    text-align: right;
+    font-size: 20px;
+}
+
+#enroll .right{
+    margin-top: 30px;
+    text-align: left;
+}
+
+section#announcement h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin:30px 0;
+}
+
+#announcement .left{
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+#announcement .right{
+    font-size:14px;
+    margin-top: 30px;
+}
+
+
+section#judge h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin:30px 0;
+}
+
+#judge div .col-sm-4{
+
+    margin: 10px auto;
+
+    background-image: url("../image/judge-bg.png");
+    background-repeat: no-repeat;
+    background-position-x:center;
+    ;
+}
+
+
+.judge-div{
+    width: 300px;
+    height: 340px;
+    margin-left:50px;
+}
+
+/*.judge-div p{*/
+    /*margin-left:30px;*/
+    /*margin-top:280px;*/
+/*}*/
+section#prize h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin:40px 0;
+}
+
+#prize .left{
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+#prize .right{
+    margin-top: 40px;
+}
+#prize div.row{
+    margin: 20px 0;
+}
+
+#sponsors h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin:40px 0;
+}
+#sponsors div .left{
+    background-image: url("../image/sponsor-bg-blue.png");
+}
+#sponsors div .right{
+    background-image: url("../image/sponsor-bg-yellow.png");
+}
+
+#sponsors div .col-sm-6{
+
+    margin: 10px auto;
+    background-repeat: no-repeat;
+    background-position-x:center;
+
+}
+
+#sponsors-div{
+    width: 550px;
+    height: 550px;
+}
+
+/*footer*/
+footer h2 {
+    font-size: 14px;
+}
