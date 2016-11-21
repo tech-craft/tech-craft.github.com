@@ -14,10 +14,16 @@
     <link href="css/jdialog.min.css" rel="stylesheet" >
     <link href="css/index.css" rel="stylesheet">
     <script src="bootstrap/js/jquery-1.11.1.js"></script>
+    <script src="js/animatescroll.js"></script>
 
 
 </head>
 <body>
+
+
+
+
+
 <!--Navigation-->
 
 <header class="navbar navbar-static-top navbar-fixed-top">
@@ -35,6 +41,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-center">
+
                     <li><a class="navigation-link" href="#about">关于TechCraft</a></li>
                     <li><a class="navigation-link" href="#schedule">活动日程</a></li>
                     <li><a class="navigation-link" href="#detail">大赛详情</a></li>
@@ -383,12 +390,12 @@
     <div class="row">
         <div class="col-sm-6 left">
             <div class="sponsors-div">
-                <p style="padding-top:280px;padding-left: 60px;padding-right: 60px;">贝塔斯曼集团是一家拥有将近200年历史的全球领先的传媒集团，在世界上50多个国家和地区开展广播电视（RTL集团）、图书出版（企鹅兰登书屋）、杂志期刊（古纳雅尔）、音乐版权（BMG）、商业服务（欧唯特）、印刷（Bertelsmann Printing Group）、在线教育（Bertelsmann Education Group）、投资（Bertelsmann Investments）等业务。</p>
+                <p style="padding-top:280px;padding-left: 65px;padding-right: 60px;">贝塔斯曼集团是一家拥有将近200年历史的全球领先的传媒集团，在世界上50多个国家和地区开展广播电视（RTL集团）、图书出版（企鹅兰登书屋）、杂志期刊（古纳雅尔）、音乐版权（BMG）、商业服务（欧唯特）、印刷（Bertelsmann Printing Group）、在线教育（Bertelsmann Education Group）、投资（Bertelsmann Investments）等业务。</p>
             </div>
         </div>
         <div class="col-sm-6 right">
             <div class="sponsors-div">
-                <p style="padding-top:280px;padding-left: 60px;padding-right: 60px;">极客公园成立于2010年，是中国创新者的大本营。通过对前沿科技的观察报道，业界一流的线下活动，众筹孵化等全方位的创业服务，极客公园汇聚了中国最广大的创新、创业人群。在内容媒体、会展公关、创业服务三大业务线协同发展下，极客公园帮助中国创业者更有效率的探索未来，链接更多的资源，让优秀的科技创业公司得以更快速的成长。
+                <p style="padding-top:280px;padding-left: 65px;padding-right: 60px;">极客公园成立于2010年，是中国创新者的大本营。通过对前沿科技的观察报道，业界一流的线下活动，众筹孵化等全方位的创业服务，极客公园汇聚了中国最广大的创新、创业人群。在内容媒体、会展公关、创业服务三大业务线协同发展下，极客公园帮助中国创业者更有效率的探索未来，链接更多的资源，让优秀的科技创业公司得以更快速的成长。
                 </p>
             </div>
         </div>
@@ -396,54 +403,81 @@
 
 </section>
 <!--合作伙伴-->
-        <section id="partner">
-            <div class="row">
-                <h2>合作伙伴</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 left">
-                    <div class="sponsors-div">
-                        <p style="padding-top:280px;">林宜立</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 right">
-                    <div class="sponsors-div">
-                        <p style="padding-top:280px">徐菁</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-<!--Footer-->
+<section id="partner">
+    <div class="row">
+        <h2>合作伙伴</h2>
+    </div>
+    <div class="row" style="margin-bottom: 50px;">
+        <div class="col-sm-3 col-sm-offset-3" >
+            <img src="image/tsinghua.png" >
+        </div>
+        <div class="col-sm-3">
+            <img src="image/udacity.png" style="margin-top: 30px;">
+        </div>
+    </div>
+</section>
 
 </div>
 </div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <h2>联系我们</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div style="float:right;">
+                <img src="image/wechat-logo.png" >
+                <img src="image/WechatQR.png" >
+                <div class="footer-text">
+                <div>贝塔斯曼招聘</div>
+                <div>微信号二维码</div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="image/weibologo.png" >
+                <div class="footer-text">
+                <div>@贝塔斯曼人才贝出</div>
+                <div>weibo.com/tmbfamily</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div style="float:left;">
+                <img src="image/maillogo.png" style="margin-top: 2px;" >
+                <div class="footer-text">
+                <div>hr@bertelsmann.com</div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5" >
+                <img src="image/techcraftlogo.png"style="float: right;">
+            </div>
+            <div class="col-sm-7">
+                <img src="image/cobrandlogo.png" style="float: left;padding-left: 40px;padding-top: 20px">
+            </div>
+        </div>
+    </div>
+
+</footer>
 <!--modal-->
 <div class="jDialog" id="about-schedule-modal">
     <div class="content">
-        <h3>Modal Dialog</h3>
         <div>
-            <p>This is a modal window. You can do the following things with it:</p>
-            <ul>
-                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget
-                    to
-                    read what they say.
-                </li>
-                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and
-                    appreciate its presence.
-                </li>
-                <li><strong>Close:</strong> click on the button below to close the modal.</li>
-            </ul>
-            <button class="button" data-dismiss="JDialog" id="test">Close me!</button>
+            <img src="image/schedule-hover.png" style="width: 1000px">
+            <button class="button" data-dismiss="JDialog" >关闭</button>
         </div>
     </div>
 </div>
 
-<script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+<!--<script src="bootstrap/js/jquery-1.11.3.min.js"></script>-->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/bootsnav.js"></script>
 <script src="js/jdialog.min.js"></script>
 <script src="js/jquery.tabslet.min.js"></script>
+
 <script>
     $("#about-schedule-modal").jDialog({
         skinClassName: 'demo',
@@ -452,6 +486,7 @@
     });
 
     $('.tabs').tabslet();
+
 
 </script>
 </body>

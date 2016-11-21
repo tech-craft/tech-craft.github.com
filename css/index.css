@@ -318,12 +318,49 @@ section#prize h2{
 
 }
 
-#sponsors-div{
+.sponsors-div{
     width: 550px;
     height: 550px;
 }
 
+#partner h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight:400;
+    margin:40px 0;
+}
 /*footer*/
 footer h2 {
-    font-size: 14px;
+    font-size: 20px;
+    text-align : center;
+    margin:40px auto;
 }
+
+footer .container-fluid{
+    background: #F5F5F5;
+    height: 330px;
+}
+
+footer .col-sm-4 img{
+    margin-bottom:10px;
+    height: 65px;
+}
+
+footer .footer-text{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer .col-sm-4{
+    text-align: center;
+}
+
+/*modal*/
+#about-schedule-modal button{
+    border: none;
+    background: none;
+
+}
+#about-schedule-modal .content{text-align: center;
+}
+
