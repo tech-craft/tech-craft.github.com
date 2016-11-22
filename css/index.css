@@ -104,7 +104,9 @@ div.aboutTC{
 }
 
 div.about-schedule{
-    margin-top:1370px;
+    /*锚点问题 需要加padding-top*/
+    margin-top:1200px;
+    padding-top:70px;
     position: absolute;
     width: 1170px;
 }
@@ -363,4 +365,8 @@ footer .col-sm-4{
 }
 #about-schedule-modal .content{text-align: center;
 }
-
+/*锚点问题*/
+section{
+    padding-top: 80px;
+    margin-top: -80px;
+}
