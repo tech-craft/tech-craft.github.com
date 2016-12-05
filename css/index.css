@@ -10,7 +10,7 @@ body{
     font-family: "Calibri","Microsoft YaHei","微软雅黑";
     /*padding-top: 80px;*/
     background-color: #000000;
-    -webkit-overflow-scrolling:touch
+    -webkit-overflow-scrolling:touch;
 }
 
 
@@ -90,6 +90,7 @@ header ul {
     margin-top: 180px;
 }
 .banner-content h1{
+    display: inline-block;
     font-size: 68px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
@@ -127,7 +128,8 @@ header ul {
 }
 
 #about h2{
-    font-size: 60px;
+    display: inline-block;
+    font-size: 50px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -143,11 +145,21 @@ header ul {
 
 
 #about h3{
-    font-size:40px;
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
 
+}
+
+.triangle{
+    display: inline-block;
+    padding-left: 30px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #81C53C;
+    border-bottom: 15px solid transparent;
 }
 
 
@@ -179,7 +191,8 @@ header ul {
 
 /*detail*/
 #detail h2{
-    font-size: 60px;
+    display: inline-block;
+    font-size: 50px;
     font-weight:400;
     margin-bottom:20px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
@@ -187,7 +200,7 @@ header ul {
     -webkit-text-fill-color: transparent;
 }
 #detail h3{
-    font-size:40px;
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
@@ -336,62 +349,48 @@ header ul {
     /*margin-top: 30px;*/
     /*text-align: left;*/
 /*}*/
-
-#policy p{
-    color: #ffffff;
+#schedule {
+    margin-top: 138px;
 }
-
-#policy h2{
-    font-size: 60px;
+#schedule h2{
+    display: inline-block;
+    font-size: 50px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight:100;
 }
 
-#policy h3{
-    font-size:40px;
+#schedule h3{
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
 
 }
 
-#policy .left{
-    font-size: 20px;
-    margin-top:60px;
+#schedule img.right{
+    padding-top:60px;
 }
 
-#policy .right{
-    font-size: 14px;
-    margin-top:60px;
-    padding-top: 2px;
+#schedule-hover{
+    padding-left: 20px;
+    border: none;
+    background:none;
+    color: #45CCDD;
+    outline: none;
+    font-size: 22px;
 }
 
-#jury h2{
-    font-size: 60px;
-    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight:100;
-}
 
-#jury h3{
-    font-size:40px;
-    color: #ffffff;
-    margin-top: -10px;
-    font-weight:100;
-
-}
-
-#jury .jury-div{
-    background-image: url(../image/jury-bg.png);
-    background-repeat: no-repeat;
-    background-position-x:center;
+/*奖项设置*/
+#prize{
+    margin-top: 86px;
 }
 
 #prize h2{
-    font-size: 60px;
+    display: inline-block;
+    font-size: 50px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -399,7 +398,7 @@ header ul {
 }
 
 #prize h3{
-    font-size:40px;
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
@@ -421,7 +420,7 @@ header ul {
     color: #ffffff;
 }
 #prize .prize-rank{
-    font-size:30px;
+    font-size:24px;
     color:#7ED321;
 
 }
@@ -454,28 +453,50 @@ header ul {
     padding-top: 20px;
 }
 
-#schedule h2{
-    font-size: 60px;
+/*jury*/
+#jury{
+    margin-top:164px;
+}
+#jury h2{
+    display: inline-block;
+    font-size: 50px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight:100;
 }
 
-#schedule h3{
-    font-size:40px;
+#jury h3{
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
 
 }
 
-#schedule img.right{
-    padding-top:60px;
+#jury .jury-div{
+    background-image: url(../image/jury-bg.png);
+    background-repeat: no-repeat;
+    background-position-x:center;
+    height:330px;
+    width: 290px;
 }
 
+#jury .jury-odd{
+    margin-top: 30px;
+}
+
+#jury .jury-even{
+    margin-top: 60px;
+}
+
+/*founders*/
+#founders {
+    margin-top: 100px;
+}
 #founders h2{
-    font-size: 60px;
+    display: inline-block;
+    font-size: 50px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -483,7 +504,7 @@ header ul {
 }
 
 #founders h3{
-    font-size:40px;
+    font-size:30px;
     color: #ffffff;
     margin-top: -10px;
     font-weight:100;
@@ -510,7 +531,7 @@ header ul {
 
 
 /*.founders-div{*/
-    /*margin-top: 120px;*/
+/*margin-top: 120px;*/
 /*}*/
 
 #partner h2{
@@ -520,7 +541,56 @@ header ul {
     margin:40px 0;
     color: #ffffff;
 }
+
+/*policy*/
+#policy{
+    margin-top:80px;
+}
+#policy p{
+    color: #ffffff;
+}
+
+#policy h2{
+    display: inline-block;
+    font-size: 50px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+
+#policy h3{
+    font-size:30px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#policy .left{
+    font-size: 20px;
+    margin-top:60px;
+}
+
+#policy .right{
+    font-size: 14px;
+    margin-top:60px;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+
+
 /*footer*/
+footer{
+    margin-top: 98px;
+    margin-bottom: 128px;
+}
+
 .footer-triangle-bg{
     /*background-image: url(../image/);;*/
 }
@@ -541,10 +611,19 @@ footer .col-sm-4 img{
 footer .footer-text{
     padding-top: 10px;
     margin-bottom: 20px;
+    color:#ffffff;
 }
 
 footer .col-sm-2{
     text-align: center;
+}
+
+/*底部三角形*/
+.bottom-bg{
+    background-image: url(../image/bottom-bg.png);
+    background-position-x: center;
+    background-position-y:bottom;
+    background-repeat: no-repeat;
 }
 
 /*modal*/
