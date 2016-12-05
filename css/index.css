@@ -7,18 +7,36 @@
 
 }
 body{
-    font-family: "Calibri","微软雅黑","Microsoft YaHei";
-    padding-top: 80px;
+    font-family: "Calibri","Microsoft YaHei","微软雅黑";
+    /*padding-top: 80px;*/
+    background-color: #000000;
 }
 
 
 /*navigation*/
-#nav-enroll{
-    color: #00E3DF !important;
-    font-size: 18px;
-    font-weight: 500;
+
+.attr-nav{
+    width: 140px;
+    height: 80px;
+    background: #7ED321;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    text-align: center;
 
 }
+
+/*div内字体矫正*/
+.attr-nav span{
+    display:inline-block;
+    font-size: 20px;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+}
+
 .navigation-link:before {
     content: "";
     position: absolute;
@@ -41,118 +59,159 @@ body{
 }
 
 header ul {
-    font-size: 15px;
+    font-size: 18px;
 }
 
-
-/*about*/
-#about{
-    height: 1646px;
+/*banner*/
+#banner{
+    height: 980px;
 }
-
-.bg-about{
-    background-image:url("../image/about-bg.png");
-    height: 1646px;
+.banner-bg{
+    background-image:url("../image/banner-bg.png");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -80px;
-    position: relative;
-
 }
 
-img#about-icon{
-    position: absolute;
-    margin-left: 7px;
-    margin-top: 93px;
-
+.banner-triangle{
+    height: 980px;
+    background-image:url("../image/banner-triangle-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
-#about h1{
-    font-size: 60px;
-    margin-left: 7px;
-    margin-top: 376px;
-    position: absolute;
-}
 
-#about h3{
-    font-size: 24px;
-    margin-left: 7px;
-    margin-top: 460px;
-    position: absolute;
-}
 
-#about img#about-cobrand{
-    margin-left: 7px;
-    margin-top: 535px;
-    position: absolute;
-}
-
-#about h2{
-    font-size: 36px;
+.banner-content{
     text-align: center;
-    font-weight:400;
-    margin-bottom:20px;
-}
-#about p{
-    font-size: 14px;
-}
-div.aboutTC{
-    margin-top:790px;
-    position: absolute;
-    width: 1170px;
-    padding: 15px;
 }
 
-div.about-schedule{
-    /*锚点问题 需要加padding-top*/
-    margin-top:1200px;
-    padding-top:70px;
-    position: absolute;
-    width: 1170px;
+.banner-content img#logo{
+    margin-top: 180px;
+}
+.banner-content h1{
+    font-size: 68px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -20px;
+}
+.banner-content img#about-cobrand{
+    margin-top: 25px;
 }
 
-div.about-schedule button{
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    border-bottom:1px solid #00E3DF;
-    background: none;
-    color:#00E3DF;
-    float: right;
-    margin-right: 39px;
-    margin-top: 20px;
-}
 
-div.about-schedule img{
-    margin-left: 41px;
-}
 /*wrapper*/
 .universal-bg{
-    background-image: url(../image/universal-bg.png);
+    background-image: url(../image/repeat-bg.png);
     background-repeat: repeat-y;
     background-position-x: center;
 
 }
 
+/*about*/
+#about{
+    height: 1086px;
+}
+.about-triangle-bg{
+    height: 1086px;
+    background-image: url(../image/about-triangle-bg.png);;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.about-bg{
+    background-image: url(../image/repeat-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#about h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+#about p{
+    font-size:18px;
+    color: #ffffff;
+    margin: 20px 0 ;
+    font-weight:100;
+}
+
+
+
+#about h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+
+
+
+/*div.about-schedule{*/
+    /*!*锚点问题 需要加padding-top*!   */
+    /*margin-top:1200px;*/
+    /*padding-top:70px;*/
+    /*position: absolute;*/
+    /*width: 1170px;*/
+/*}*/
+
+/*div.about-schedule button{*/
+    /*border-top:none;*/
+    /*border-left:none;*/
+    /*border-right:none;*/
+    /*border-bottom:1px solid #00E3DF;*/
+    /*background: none;*/
+    /*color:#00E3DF;*/
+    /*float: right;*/
+    /*margin-right: 39px;*/
+    /*margin-top: 20px;*/
+/*}*/
+
+/*div.about-schedule img{*/
+    /*margin-left: 41px;*/
+/*}*/
+
 /*detail*/
-section#detail h2{
-    font-size: 36px;
-    text-align: center;
+#detail h2{
+    font-size: 60px;
     font-weight:400;
     margin-bottom:20px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+#detail h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#detail p#approach{
+    margin-top: 50px ;
+    font-size:28px;
+    color: #ffffff;
+}
+
+
 /*tab*/
 
 
 .tabs li {
     text-align: center;
-    border-top:1px solid #E5E5E5;
-    border-left:1px solid #E5E5E5;
-    border-right:1px solid #E5E5E5;
-    border-bottom: 4px solid #E5E5E5;
+    /*border-top:1px solid transparent;*/
+    /*border-left:1px solid #E5E5E5;*/
+    /*border-right:1px solid #E5E5E5;*/
+    border-bottom: 2px solid #E5E5E5;
     /*margin: 0 0;*/
     display: inline-block;
-    background:white;
+    background:transparent;
 }
 
 .tabs a {
@@ -166,8 +225,8 @@ section#detail h2{
 
 .tabs li:hover {
     color: #cccccc;
-    background: white;
-    border-bottom: 4px solid #00E3DF;
+    background: transparent;
+    border-bottom: 2px solid #7ED321;
 }
 
 .tabs li:hover a {
@@ -175,173 +234,303 @@ section#detail h2{
 }
 
 .active {
-    background: white;
-    border-bottom: 4px solid #00E3DF !important;
+    background: #7ED321;
+    border-bottom: 2px solid #7ED321 !important;
 }
 
 .active a {
-    color: black ;
+    color: #7ED321 ;
 }
 
+
+/*tab案例*/
 #challenge .left{
-    text-align: right;
-    margin-top: 25px;
-    padding-right: 50px;
-    font-size: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top:60px;
 }
+
 #challenge .right{
-    font-size:14px;
-    margin-top: 30px;
+    font-size: 14px;
+    /*padding-top: 2px;*/
+    color:#ffffff;
+    margin-top:60px;
 }
-#challenge img{
-    margin:30px 0 ;
-    text-align: center;
+
+#challenge .left-first{
+    padding-top: 30px;
+
+}
+
+#challenge span{
+    color:#7ED321;
 }
 
 #demoDay .left{
-    text-align: right;
-    margin-top: 25px;
-    padding-right: 50px;
-    font-size: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top:60px;
 }
 
 #demoDay .right{
-    font-size:14px;
-    margin-top: 30px;
+    font-size: 14px;
+    /*padding-top: 2px;*/
+    color:#ffffff;
+    margin-top:60px;
 }
 
-#demoDay .left-first{
-    margin-top: 70px;
-    font-size: 20px;
+#demoDay span{
+    color: #7ED321;
 }
 
-#demoDay .right-first img{
-    margin: 20px;
-}
-
-#enroll .left{
-    margin-top: 25px;
-    text-align: right;
-    font-size: 20px;
-}
-
-#enroll .right{
-    margin-top: 30px;
-    text-align: left;
-}
-
-section#announcement h2{
-    font-size: 36px;
-    text-align: center;
-    font-weight:400;
-    margin:30px 0;
-}
-
-#announcement .left{
-    text-align: right;
-    margin-top: 25px;
-    padding-right: 50px;
-    font-size: 20px;
-}
-
-#announcement .right{
-    font-size:14px;
-    margin-top: 30px;
-}
-
-
-section#judge h2{
-    font-size: 36px;
-    text-align: center;
-    font-weight:400;
-    margin:30px 0;
-}
-
-#judge div .col-sm-4{
-
-    margin: 10px auto;
-
-    background-image: url("../image/judge-bg.png");
+#enroll .enroll-prize{
+    background-image: url(../image/enroll-bg.png);
     background-repeat: no-repeat;
-    background-position-x:center;
-    ;
+    margin-top: 58px;
+    height:208px;
 }
 
-
-.judge-div{
-    width: 300px;
-    height: 340px;
-    margin-left:50px;
+#enroll .ticket{
+    padding-left: 142px;
+    padding-top: 38px;
 }
-
-/*.judge-div p{*/
-    /*margin-left:30px;*/
-    /*margin-top:280px;*/
+#enroll p.content{
+    font-size:24px;
+    padding-left: 142px;
+    color: #ffffff;
+}
+#enroll p.notice{
+    font-size: 20px;
+    padding-left: 142px;
+    color: #727272;
+}
+/*#demoDay .left{*/
+    /*text-align: right;*/
+    /*margin-top: 25px;*/
+    /*padding-right: 50px;*/
+    /*font-size: 20px;*/
 /*}*/
-section#prize h2{
-    font-size: 36px;
-    text-align: center;
-    font-weight:400;
-    margin:40px 0;
+
+/*#demoDay .right{*/
+    /*font-size:14px;*/
+    /*margin-top: 30px;*/
+/*}*/
+
+/*#demoDay .left-first{*/
+    /*margin-top: 70px;*/
+    /*font-size: 20px;*/
+/*}*/
+
+/*#demoDay .right-first img{*/
+    /*margin: 20px;*/
+/*}*/
+
+/*#enroll .left{*/
+    /*margin-top: 25px;*/
+    /*text-align: right;*/
+    /*font-size: 20px;*/
+/*}*/
+
+/*#enroll .right{*/
+    /*margin-top: 30px;*/
+    /*text-align: left;*/
+/*}*/
+
+#policy p{
+    color: #ffffff;
 }
 
-#prize .left{
-    text-align: right;
-    margin-top: 25px;
-    padding-right: 50px;
+#policy h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+
+#policy h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#policy .left{
     font-size: 20px;
+    margin-top:60px;
 }
 
-#prize .right{
-    margin-top: 40px;
-}
-#prize div.row{
-    margin: 20px 0;
-}
-
-#sponsors h2{
-    font-size: 36px;
-    text-align: center;
-    font-weight:400;
-    margin:40px 0;
-}
-#sponsors div .left{
-    background-image: url("../image/sponsor-bg-blue.png");
-}
-#sponsors div .right{
-    background-image: url("../image/sponsor-bg-yellow.png");
+#policy .right{
+    font-size: 14px;
+    margin-top:60px;
+    padding-top: 2px;
 }
 
-#sponsors div .col-sm-6{
+#jury h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
 
-    margin: 10px auto;
+#jury h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#jury .jury-div{
+    background-image: url(../image/jury-bg.png);
     background-repeat: no-repeat;
     background-position-x:center;
+}
+
+#prize h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+
+#prize h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
 
 }
 
-.sponsors-div{
-    width: 550px;
-    height: 550px;
+#prize li{
+    background-repeat: no-repeat;
+    list-style: none;
+    height:184px;
+    margin-top: 41px;
+    background-position-y:center;
+    padding-left: 180px;
+
+
 }
+#prize p{
+    font-size:18px;
+    color: #ffffff;
+}
+#prize .prize-rank{
+    font-size:30px;
+    color:#7ED321;
+
+}
+#prize .prize-1{
+    background-image:url("../image/prize-1.png");
+
+}
+#prize .prize-2{
+    background-image:url("../image/prize-2.png");
+
+}
+#prize .prize-3{
+    background-image:url("../image/prize-3.png");
+
+}
+#prize .prize-potentional{
+    background-image:url("../image/prize-potentional.png");
+
+}
+#prize .prize-demo{
+    background-image:url("../image/prize-demo.png");
+
+}
+#prize .offer{
+    background-image:url("../image/prize-offer.png");
+
+}
+
+#prize .prize-detail{
+    padding-top: 20px;
+}
+
+#schedule h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+
+#schedule h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#schedule img.right{
+    padding-top:60px;
+}
+
+#founders h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
+}
+
+#founders h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+#founders div .left{
+    background-image: url("../image/founders-bertelsmann.png");
+    margin-top: 120px;
+}
+#founders div .right{
+    background-image: url("../image/founders-geekpark.png");
+    margin-top: 120px;
+}
+#founders div{
+    background-repeat: no-repeat;
+}
+.founders-div{
+    color: #ffffff;
+    padding-top:160px;
+    padding-right: 70px;
+    font-size: 19px;
+
+}
+
+
+/*.founders-div{*/
+    /*margin-top: 120px;*/
+/*}*/
 
 #partner h2{
     font-size: 36px;
     text-align: center;
     font-weight:400;
     margin:40px 0;
+    color: #ffffff;
 }
 /*footer*/
+.footer-triangle-bg{
+    /*background-image: url(../image/);;*/
+}
+
 footer h2 {
     font-size: 20px;
     text-align : center;
     margin:40px auto;
+    color: #45CCDD;
 }
 
-footer .container-fluid{
-    background: #F5F5F5;
-    height: 330px;
-}
 
 footer .col-sm-4 img{
     margin-bottom:10px;
@@ -353,7 +542,7 @@ footer .footer-text{
     margin-bottom: 20px;
 }
 
-footer .col-sm-4{
+footer .col-sm-2{
     text-align: center;
 }
 
@@ -365,8 +554,39 @@ footer .col-sm-4{
 }
 #about-schedule-modal .content{text-align: center;
 }
-/*锚点问题*/
-section{
-    padding-top: 80px;
-    margin-top: -80px;
+
+
+#nav-enroll h2{
+    font-size: 60px;
+    background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:100;
 }
+
+#nav-enroll h3{
+    font-size:40px;
+    color: #ffffff;
+    margin-top: -10px;
+    font-weight:100;
+
+}
+
+#nav-enroll .content{
+    background-color: #181B21;
+}
+
+#nav-enroll p{
+    color: #ffffff;
+}
+
+
+
+
+
+
+/*锚点问题*/
+/*section{*/
+    /*padding-top: 80px;*/
+    /*margin-top: -80px;*/
+/*}*/

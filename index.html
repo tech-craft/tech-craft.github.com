@@ -13,10 +13,6 @@
     <link href="bootstrap/css/tabstyles.css" rel="stylesheet">
     <link href="css/jdialog.min.css" rel="stylesheet" >
     <link href="css/index.css" rel="stylesheet">
-    <script src="bootstrap/js/jquery-1.11.1.js"></script>
-    <script src="js/animatescroll.js"></script>
-
-
 </head>
 <body>
 
@@ -29,143 +25,205 @@
 <header class="navbar navbar-static-top navbar-fixed-top">
     <nav class="navbar navbar-default bootsnav">
         <div class="container">
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                    <button class="button" data-toggle="JDialog" data-target="nav-enroll" style="border: none;background:none;line-height: 80px;outline: none;"><span>报名参赛</span></button>
+
+            </div>
+            <!-- End Atribute Navigation -->
+
+
             <!-- Start Header Navigation -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#"><img src="image/nav-icon.png" class="logo" alt=""></a>
+                <a class="navbar-brand" href="#brand"><img src="image/nav-icon.png" class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-center">
-
-                    <li><a class="navigation-link" href=#about>关于TechCraft</a></li>
-                    <li><a class="navigation-link" href="#schedule">活动日程</a></li>
-                    <li><a class="navigation-link" href="#detail">大赛详情</a></li>
-                    <li><a class="navigation-link" href="#judge">嘉宾评委</a></li>
-                    <li><a class="navigation-link" href="#prize">奖项设置</a></li>
-                    <li><a class="navigation-link" href="#partner">合作伙伴</a></li>
-                    <li><a class="navigation-link" href="#new">最新动态</a></li>
-                    <li><a class="navigation-link" href="#" id="nav-enroll">报名参赛</a></li>
-
-
+                    <li><a href=#about>关于TechCraft</a></li>
+                    <li><a href="#detail">大赛详情</a></li>
+                    <li><a href="#schedule">活动日程</a></li>
+                    <li><a href="#prize">奖项设置</a></li>
+                    <li><a href="#jury">嘉宾评委</a></li>
+                    <li><a href="#partner">合作伙伴</a></li>
                 </ul>
-            </div>
+            </div><!-- /.navbar-collapse -->
         </div>
     </nav>
+    <!--<nav class="navbar navbar-default bootsnav">-->
+        <!--<div class="container">-->
+            <!--&lt;!&ndash; Start Header Navigation &ndash;&gt;-->
+            <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">-->
+                    <!--<i class="fa fa-bars"></i>-->
+                <!--</button>-->
+                <!--<a class="navbar-brand" href="#"><img src="image/nav-icon.png" class="logo" alt=""></a>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; End Header Navigation &ndash;&gt;-->
+
+            <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+            <!--<div class="collapse navbar-collapse" id="navbar-menu">-->
+                <!--<ul class="nav navbar-nav navbar-center">-->
+
+                    <!--<li><a class="navigation-link" href=#about>关于TechCraft</a></li>-->
+                    <!--<li><a class="navigation-link" href="#schedule">活动日程</a></li>-->
+                    <!--<li><a class="navigation-link" href="#detail">大赛详情</a></li>-->
+                    <!--<li><a class="navigation-link" href="#judge">嘉宾评委</a></li>-->
+                    <!--<li><a class="navigation-link" href="#prize">奖项设置</a></li>-->
+                    <!--<li><a class="navigation-link" href="#partner">合作伙伴</a></li>-->
+                    <!--<li><a class="navigation-link" href="#new">最新动态</a></li>-->
+                    <!--<li><a class="navigation-link" href="#" id="nav-enroll">报名参赛</a></li>-->
+
+
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</nav>-->
 </header>
-<!--关于TechCraft-->
-<section id="about" class="bg-about">
-    <div class="container">
-        <img id="about-icon" src="image/about-icon.png">
-        <h1>科技驱动商业新变量</h1>
-        <h3>技术分享 | 科技x商业案例挑战赛 | Demo Day | 极客嘉年华</h3>
-        <img id="about-cobrand" src="image/about-cobrand.png">
-        <div class="aboutTC row">
-            <h2>关于TechCratf</h2>
-            <p>BAI，是德国贝塔斯曼集团旗下关注科技创业的风投基金；极客公园，是国内最大的创新者平台。因为共同相信“科技驱动商业新变量”，偏爱“拥有商业理想的极客青年”，我们聚合了贝塔斯曼旗下优势业务和极客公园平台丰富资源，面向校园联手推出年度品牌活动：TechCraft 2017。</p><p>这是一场技术的布道，我们请来了国内外创新先驱、技术大咖、深科技创业者和投资人，为你解码科技行业新风向；</p>
-            <br>
-            <p>这是一次硬核的案例挑战赛，技术和商科背景参赛者将在此混搭，合作挑战真实公司案例，就如何依托技术手段解决商业问题，亮出你的回答；</p>
-            <p>这是一个造物者的竞技场，Demo Day给你和你团队的科技创新/创业项目搭好了擂台，与众多造物者较量胜出，意味着更多关注、职业机会、和获得BAI投资的可能；</p>
-            <p>这是一场极客嘉年华，你们狂爱黑科技，我们就把黑科技空间站搬来现场，邀你体验，跟一群黑科技创业者面对面交流玩耍；</p>
-            <br>
-            <p>总之，这是一次跨界的、前沿的、有料的、极客青年专属的，集体野望。
-            </p>
-            <br>
-            <p>欢迎你来！</p>
-        </div>
-        <!--活动日程-->
-        <div id="schedule" class="about-schedule row">
-            <h2>活动日程</h2>
-            <img id="about-schedule" src="image/about-schedule.png" style="text-align: center">
-            <button class="button" data-toggle="JDialog" data-target="about-schedule-modal">点击查看初拟日程</button>
+<!--banner-->
+<section id="banner" class="banner-bg">
+    <div class="banner-triangle">
+       <div class="container banner-content">
+           <div class="row">
+               <img class="col-xs-8 col-xs-offset-2" id="logo" src="image/about-icon.png">
+               <h1 class="col-xs-12">科技驱动商业未来</h1>
+               <img class="col-xs-6 col-xs-offset-3" id="cobrand" src="image/about-cobrand.png">
+           </div>
+
+       </div>
+    </div>
+</section>
+<!--关于TC-->
+<section id="about" class="about-bg">
+    <div class="about-triangle-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>关于TechCraft</h2>
+                </div>
+                <div class="col-xs-12">
+                    <h3>ABOUT</h3>
+                </div>
+                    <p class="col-xs-12">BAI，是德国贝塔斯曼集团旗下关注科技创业的风投基金；极客公园，是国内最大的创新者平台。在科技悄然而迅速改变世界的今天，我们聚合了贝塔斯曼旗下优势业务和极客公园平台丰富资源，面向校园联手推出全新的年度品牌活动：TechCraft 2017。</p>
+                <div class="col-xs-12">
+                    <p>这是一场技术的布道，我们请来了国内外创新先驱、技术大咖、深科技创业者和投资人，为你解码科技行业新风向；</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>这是一次硬核的案例挑战赛，技术和商科背景选手将在此混搭，合作挑战真实公司案例，就如何依托技术手段解决商业问题，给出你的回答。</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>这是一个造物者的竞技场，Demo Day为你们的科技创新创业项目搭起擂台，与众多造物者较量胜出，意味着职业机会、更多关注、和直接获得投资的可能。</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>这是一场极客嘉年华，你狂爱黑科技，我们就现场造一个黑科技体验站，任你徜徉，结识志同道合的盟友。</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>我们欢迎不拘一格的技术天才，欢迎心中有火眼里有光的未来商业领袖，欢迎一切实用的理想主义者，不管你穿着人字拖还是打着领带。</p>
+                </div>
+
+                <div class="col-xs-12">
+                    <p>只拿着旧钥匙，永远无法敲开厚厚的墙。这是TechCraft诞生的初衷，我们希望它能和这个时代一起野蛮成长。而此刻怀揣科技与商业梦想的少年，你们才是人们凝视未来的眼睛。
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
+
+
 </section>
+
 <!--wrapper-->
 <div class="universal-bg">
     <div class="container">
+
     <!--大赛详情-->
     <section id="detail">
-        <div class="row">
-            <h2>大赛详情</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>大赛详情</h2>
+                </div>
+                <div class="col-xs-12">
+                    <h3>INFORMATION</h3>
+                </div>
+                <div class="col-xs-12">
+                   <p id="approach">你有三种方式参加TechCraft 2017</p>
+                </div>
+            </div>
 
-        </div>
+
+
             <div class="tabs">
                     <ul>
-                    <li class="col-sm-4"><a href="#challenge"><span>案例挑战赛</span></a></li>
-                    <li class="col-sm-4"><a href="#demoDay"><span>Demo Day 大赛</span></a></li>
-                    <li class="col-sm-4"><a href="#enroll"><span>观众报名</span></a></li>
+                    <li class="col-xs-4"><a href="#challenge"><span>案例挑战赛</span></a></li>
+                    <li class="col-xs-4"><a href="#demoDay"><span>Demo Day 大赛</span></a></li>
+                    <li class="col-xs-4"><a href="#enroll"><span>观众报名</span></a></li>
                     </ul>
 
                 <div id="challenge">
                     <div class="row">
-                        <div class="left col-xs-3" >
-                            <p>赛制说明</p>
+                        <div class="left col-xs-12 col-sm-2" >
+                            <p class="left left-first ">赛制说明</p>
                         </div>
-                        <img class="col-xs-12" src="image/ruledescrip.png" alt="">
-                        <p class="right col-sm-9 col-sm-offset-3">主办方从全部申请者中筛选并组合出15支最优秀的团队，邀请至北京参加现场挑战赛，案例将在活动前一个月发放，现场第一轮比赛选出6支团队挺进决赛，角逐大赛奖励。
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">参赛对象</p>
-                        <p class="right col-sm-9 ">全国及海外高校在校生（专科生、本科生、研究生、博士生、MBA不限），和拥有5年以下工作经验的青年人才均可参赛。</p>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">参赛方式</p>
-                        <p class="right col-sm-9 ">我们鼓励组队报名参赛，团队规模3-4人，团队成员可来自不同地区、学校或专业；团队可配备一位学院指导教师或业界导师；假如你更期待由主办方为你量身组队并结识新队友的惊喜，那么也欢迎你以个人方式报名。
-                            注：每人只可参加一支团队，大赛允许同时报名案例挑战赛和Demo Day。</p>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">参赛对象</p>
-                        <p class="right col-sm-9 ">全国及海外高校在校生（专科生、本科生、研究生、博士生、MBA不限），和拥有5年以下工作经验的青年人才均可参赛。</p>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">如何申请</p>
-                        <div class="right col-sm-9 ">
-                            <p>必选项：提交中英文简历至hr@bertelsmann.com。如组队报名，请团队队长汇总全体队员简历后统一发送。</p>
-                            <P>加分项：为了帮助你或你的团队在众多申请中脱颖而出，我们鼓励你展开联想和创造，随简历一并提交你或你的团队在以下领域的相关作品或方案。</P>
+                        <div class="right col-xs-12 col-sm-10">
+                            <img src="image/challenge-rule.png" >
                         </div>
-                    </div>
-                    <img class="col-xs-12" src="image/challenge-img.png" alt="">
-                    <div class="row">
-                        <p class="left col-sm-3 ">作品要求</p>
-                        <p class="right col-sm-9 ">若作品或方案属于机器人、智能生活等硬件类别，需提交10页以内大小不超过5M的产品介绍文档（DOCX格式）或BP（PPTX格式），并注明截至报名的产品开发阶段；如能一并提交设计图纸（建议DWG格式）或视频演示等其他展示性作品，可帮助评委更好地了解项目。
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p class="right col-sm-9 col-sm-offset-3">若作品或方案属于交通出行、数据安全、云服务等软件类别，需提交10页以内大小不超过5M的作品介绍文档（DOCX格式）或BP（PPTX格式），如作品为app则鼓励一并提交demo。
-                        </p>
+                        <p class="left col-xs-12 col-sm-2 ">参赛对象</p>
+                        <p class="right col-xs-12 col-sm-10 ">全国及海外高校在校生（专科生、本科生、研究生、博士生、MBA不限），和拥有5年以下工作经验的青年人才均可参赛。</p>
+                        <p class="left col-xs-12 col-sm-2">参赛方式</p>
+                        <div class="right col-xs-12 col-sm-10">
+                            <p>我们鼓励组队报名参赛，团队规模3-4人，团队成员可来自不同地区、学校或专业；团队可配备一位学院指导教师或业界导师；如果你更期待主办方为你量身组队，附赠结识新队友的惊喜，那么也欢迎你以个人方式报名。
+                                可同时报名案例挑战赛和Demo Day。</p>
+                        </div>
+                        <p class="left col-xs-12 col-sm-2 ">如何申请</p>
+                        <div class="right col-xs-12 col-sm-10">
+                            <p>必选项：发送个人或团队中英文简历至<span>hr@bertelsmann.com</span>。</p>
+                            <P>加分项：想从众多申请中脱颖而出？随简历一并提交你在以下领域的相关作品或方案吧！</P>
+                            <P><span>机器人：</span>工业级机器人、家庭服务机器人、陪伴机器人、智能玩具、无人机、模拟助手等</P>
+                            <P><span>智能生活：</span>智能家居、可穿戴设备、智慧城市方案、虚拟现实、增强现实等</P>
+                            <P><span>交通出行：</span>智能汽车、无人驾驶方案、车联网等</P>
+                            <P><span>数据安全：</span>监控平台方案、黑客反入侵方案等</P>
+                            <P><span>云服务：</span>云存储解决方案、云计算方案等</P>
+                        </div>
+                        <p class="left col-xs-12 col-sm-2">作品要求</p>
+                        <div class="right col-xs-12 col-sm-10">
+                            <p>若作品或方案属于硬件类别，需提交10页以内大小不超过5M的产品介绍文档（DOCX、PDF格式）或BP（PPTX、PDF格式），并注明截至报名的产品开发阶段；如能一并提交设计图纸（建议DWG格式）或视频演示等其他展示性作品，可帮助评委更好地了解项目。</p>
+                            <p>若作品或方案属于软件类别，需提交10页以内大小不超过5M的作品介绍文档（DOCX、PDF格式）或BP（PPTX、PDF格式），如作品为app则鼓励一并提交demo。</p>
+                        </div>
                     </div>
                 </div>
                 <div id="demoDay">
                     <div class="row">
-                        <p class="left left-first col-xs-3">赛制说明</p>
-                        <div class="right right-first col-sm-9">
-                            <img src="image/demo-img.png" alt="">
-                            <p>主办方从全部作品中评选出8个最优秀的作品，并邀请作品开发者（个人或1-2位团队代表）至北京参加现场Demo Day，现场第一轮入围赛选出3个作品挺进决赛，最终展示并角逐大赛奖励。</p>
+                        <p class="left left-first col-xs-12 col-sm-2">赛制说明</p>
+                        <div class="right right-first col-xs-12 col-sm-10">
+                        <img src="image/demo-rule.png">
                         </div>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">赛题设置</p>
-                        <div class="right col-sm-9">
-                            <p>贝塔斯曼和极客公园共同关注机器人、智能生活、交通出行、数据安全、云服务等五大领域的科技创想和革新。</p>
-                            <p>TechCraft Demo Day希望征集到你在这些甚至更广泛领域内的科技作品或方案。</p>
+                        <p class="left col-xs-12 col-sm-2 ">赛题设置</p>
+                        <div class="right col-xs-12 col-sm-10">
+                            <p>Demo Day征集以下五大领域为主的优秀科技作品和创新方案。</p>
+                            <P><span>机器人：</span>工业级机器人、家庭服务机器人、陪伴机器人、智能玩具、无人机、模拟助手等</P>
+                            <P><span>智能生活：</span>智能家居、可穿戴设备、智慧城市方案、虚拟现实、增强现实等</P>
+                            <P><span>交通出行：</span>智能汽车、无人驾驶方案、车联网等</P>
+                            <P><span>数据安全：</span>监控平台方案、黑客反入侵方案等</P>
+                            <P><span>云服务：</span>云存储解决方案、云计算方案等</P>
                         </div>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">如何申请</p>
-                        <div class="right col-sm-9">
-                            <p>提交你或你的团队作品及团队成员介绍至hr@bertelsmann.com。</p>
+                        <p class="left col-xs-12 col-sm-2">参赛对象</p>
+                        <p class="right col-xs-12 col-sm-10">全国及海外高校在校生（专科生、本科生、研究生、博士生、MBA不限），和拥有5年以下工作经验的青年人才均可参赛。</p>
+                        <p class="left col-xs-12 col-sm-2">报名方式</p>
+                        <p class="right col-xs-12 col-sm-10">组队或个人报名参赛均可，团队规模不限，团队成员可来自不同地区、学校或专业；团队可配备一位学院指导教师或业界导师。可同时报名案例挑战赛和Demo Day。</p>
+                        <p class="left col-xs-12 col-sm-2">如何申请</p>
+                        <div class="right col-xs-12 col-sm-10">
+                            <p>发送作品及团队成员介绍至<span>hr@bertelsmann.com</span>。</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">作品要求</p>
-                        <div class="right col-sm-9">
+                        <p class="left col-xs-12 col-sm-2 ">作品要求</p>
+                        <div class="right col-xs-12 col-sm-10">
                             <p>申请阶段：</p>
                             <p>若作品或方案属于机器人、智能生活等硬件类别，需提交10页以内大小不超过5M的产品介绍文档（DOCX格式）或BP（PPTX格式），并注明截至报名的产品开发阶段；如能一并提交设计图纸（建议DWG格式）或视频演示等其他展示性作品，可帮助评委更好地了解项目。
                                 若作品或方案属于交通出行、数据安全、云服务等软件类别，需提交10页以内大小不超过5M的作品介绍文档（DOCX格式）或BP（PPTX格式），如作品为app则鼓励一并提交demo。</p>
@@ -176,294 +234,288 @@
                             <p>若作品或方案属于交通出行、云服务、数据安全等软件类别，选手需根据源代码将产品的具体解决方案进一步完善，在决赛现场汇报展示。</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">奖项设置</p>
-                        <div class="right col-sm-9">
-                            <p>申请阶段：</p>
-                            <p>大赛评委会将从创新性、技术性、商业潜力、现场表现等多个维度对3个决赛作品进行评审，并最终选出一个作品获得Demo Day大奖。Demo Day大奖奖励设置为：
-                            </p>
-                            <p>奖金：60000元；</p>
-                            <p>奖励：极客公园创新大会通票；</p>
-                            <p>职业：BAI实习或全职offer；
-                            </p>
-                            <p>投资：获得BAI投资的可能。</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">如何申请</p>
-                        <div class="right col-sm-9">
-                            <p>全国及海外高校在校生（专科生、本科生、研究生、博士生、MBA不限），和拥有5年以下工作经验的青年人才均可参赛。</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p class="left col-sm-3 ">参赛方式</p>
-                        <div class="right col-sm-9">
-                            <p>组队或个人报名参赛均可，团队规模不限，团队成员可来自不同地区、学校或专业；团队可配备一位学院指导教师或业界导师。</p>
-                            <p>注：大赛允许同时报名案例挑战赛和Demo Day。</p>
-                        </div>
-                    </div>
 
                 </div>
 
                 <div id="enroll">
                     <div class="row">
-                        <div class="left col-sm-6">
-                            <!--<h2>早鸟票</h2>-->
-                            <!--<p>参加TechCraft前沿论坛</p>-->
-                            <!--<p>观摩决赛</p>-->
-                            <!--<p>参加交流酒会及颁奖典礼</p>-->
-                            <!--<p>*报名成功后可收到早鸟票电子票，活动当天凭票入场</p>-->
-                            <!--<p>报名通道即将开启</p>-->
-                            <img src="image/enroll-left.png">
+                        <div class="left col-xs-12 ">
+                            <div class="enroll-prize">
+                                <p class="ticket" style="font-size: 42px;color: #7ED321">早鸟票</p>
+                                <p class="content">TechCraft论坛｜决赛展示｜黑科技体验区｜交流酒会及颁奖典礼</p>
+                                <p class="notice">*报名成功后可收到电子票，活动当天凭票入场</p>
+                            </div>
                         </div>
-                        <div class="right col-sm-6">
-                            <!--<h2>普通票</h2>-->
-                            <!--<p>参加TechCraft前沿论坛</p>-->
-                            <!--<p>观摩决赛</p>-->
-                            <!--<p>*报名成功后可收到早鸟票电子票，活动当天凭票入场</p>-->
-                            <!--<p>报名通道即将开启</p>-->
-                            <img src="image/enroll-right.png">
+                        <div class="right col-xs-12">
+                            <div class="enroll-prize">
+                                <p class="ticket" style="font-size: 42px;color: #45CCDD">极客票</p>
+                                <p class="content">TechCraft论坛｜决赛展示｜黑科技体验区</p>
+                                <p class="notice">*报名成功后可收到电子票，活动当天凭票入场</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-<!--相关声明-->
-    <section id="announcement">
-        <div class="row">
-            <h2>相关声明</h2>
-        </div>
-        <div class="row">
-            <p class="left col-sm-3 ">知识产权</p>
-            <p class="right col-sm-9 ">参赛者所提交的参赛方案以及应用程序，知识产权归参赛者所有。参赛者授权主办方为本次大赛目的免费使用其参赛方案及应用程序，以便主办方能够对参赛者提交的参赛方案进行测试和评估，并用于广告宣传及公开展示。</p>
-        </div>
-        <div class="row">
-            <div class="left col-sm-3 ">
-                <p>用户个人</p>
-                <p style="margin-top: -10px">信息保护</p>
+        <!--活动日程-->
+        <section id="schedule">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h2>活动日程</h2>
+                    <h3>SCHEDULE</h3>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                <img class="left" src="image/schedule-left.png">
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                <img class="right" src="image/schedule-right.png">
+                    <button class="button" data-toggle="JDialog" data-target="about-schedule-modal" style="border: none;background:none;color: #45CCDD;outline: none;">初拟日程</button>
+                </div>
             </div>
-            <div class="right col-sm-9">
-                <p>参赛者必须保证提供的信息真实、准确、合法、有效。参赛者同意在大赛报名过程中所登记的个人参赛信息可能会在以下方面被处理、储存或使用：</p>
-                <p>1）为大赛目的和与大赛相关的情况而使用，包括但不限于为大赛做广告或宣传；</p>
-                <p>2）应用于与大赛有关的、将在以后发布的公关材料中；</p>
-                <p>一旦参赛，参赛者同意并且被视为已同意受上述隐私政策的约束。参赛者的个人资料也会被主办方留档保存。未经参赛者同意，主办方不会向除上述(1)和(2)目的以外的任何公司、组织或个人披露其个人信息，但法律法规另有规定的除外。</p>
-            </div>
-        </div>
-        <div class="row">
-            <p class="left col-sm-3 ">获奖说明</p>
-            <p class="right col-sm-9 ">获奖团队须确定一名代表成员接受奖励。参赛团队应自行负责在其成员之间分配和分发奖金与奖品，主办方对此将不承担任何责任。
-                奖金个人所得税将由获奖者承担，主办方代扣代缴。</p>
-        </div>
-        <div class="row">
-            <p class="left col-sm-3 ">法律责任</p>
-            <div class="right col-sm-9">
-                <p>若参加大赛的作品侵犯第三方合法权益，导致第三方向主办方投诉，或者依法向主办方索赔，或者将主办方起诉至人民法院、投诉至相应的行政机关的，视为参赛者根本违约，主办方有权要求参赛者承担下列违约责任：</p>
-                <p>1）将其已经收到的奖金全部返还主办方；</p>
-                <p>2）支付金额相当于其已经收到的奖金的违约金；</p>
-                <p>3）赔偿主办方由此遭受的一切经济损失，包括但不限于主办方依法支付第三方的赔偿金、依法向相应的行政机关缴纳的罚金和诉讼费、律师费等其他合理开支。</p>
-            </div>
-        </div>
-        <div class="row">
-            <p class="left col-sm-3 ">申诉与受理</p>
-            <div class="right col-sm-9">
-                <p>1）申诉－参赛者对不符合本赛项规定的设备、工具、软件，有失公正的评判、奖励，以及对工作人员的违规行为等，均可提出申诉。
-                    具体操作是参赛者向大赛官方邮箱hr@bertelsmann.com发送申诉邮件，详细描述申诉内容。</p>
-                <p>对于各阶段比赛结果的申诉，应在结果公布后48小时内提出，超过时效将不予受理。</p>
-                <p>2）受理－组委会负责受理比赛中出现的申诉并进行处理，以保证比赛的顺利进行和大赛结果的公平、公正。</p>
-                <p>申诉方如认为处理意见不合理，可向赛项执行委员会提出复诉。</p>
-                <p>参赛者不得因提起申诉或对申诉处理意见不服而停止比赛或滋事，否则按弃权处理，大赛不因申诉事件而组织重赛。</p>
-            </div>
-        </div>
-    </section>
-<!--嘉宾评委-->
-<section id="judge">
-    <div class="row">
-        <h2>嘉宾评委</h2>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 col-md-4">
-            <div class="judge-div">
-            <p style="padding-top:280px;">林宜立</p>
-            <p style="padding-top:5px;">出门问问产品团队负责人</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="judge-div">
-            <p style="padding-top:280px">徐菁</p>
-            <p style="padding-top:10px">百度凡尔纳计划发起人</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="judge-div">
-            <p style="padding-top:280px">Dan Wong</p>
-            <p style="padding-top:5px">Rokid 创始人 | CEO</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 col-md-4">
-            <div class="judge-div">
-            <p style="padding-top:280px;">陈朝阳</p>
-            <p style="padding-top:5px;">大朋VR 创始人 | CEO</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="judge-div">
-            <p style="padding-top:280px;">张萌</p>
-            <p style="padding-top:5px;">猿圈 创始人 | CEO</p>
-            </div>
-        </div>
-    </div>
+            <!--<div id="schedule" class="about-schedule row">-->
+            <!--<h2>活动日程</h2>-->
+            <!--<img id="about-schedule" src="image/about-schedule.png" style="text-align: center">-->
 
-</section>
+            <!--</div>-->
+        </section>
+
 <!--奖项设置-->
 <section id="prize">
     <div class="row">
-        <h2>奖项设置</h2>
+        <div class="col-xs-12">
+            <h2>奖项设置</h2>
+        </div>
+        <div class="col-xs-12">
+            <h3>AWARD</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <ul>
+                <li class="prize-1">
+                    <div class="prize-detail">
+                        <p class="prize-rank">一等奖</p>
+                        <p>一支队伍</p>
+                        <p>价值100000元的硅谷游学之旅</p>
+                        <p>极客公园创新大会通票</p>
+                    </div>
+                </li>
+                <li class="prize-2">
+                    <div class="prize-detail">
+                        <p class="prize-rank" >二等奖</p>
+                        <p>一支队伍</p>
+                        <p>奖金30000元</p>
+                        <p>极客公园创新大会通票</p>
+                    </div>
+                </li>
+                <li class="prize-3">
+                    <div class="prize-detail">
+                        <p class="prize-rank">三等奖</p>
+                        <p>一支队伍</p>
+                        <p>奖金20000元</p>
+                        <p>极客公园创新大会通票</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li class="prize-potentional">
+                <div class="prize-detail">
+                    <p class="prize-rank">最具潜力奖</p>
+                    <p>一支队伍</p>
+                    <p>贝塔斯曼旗下Udacity提供的价值15000的硅谷技术培训课程</p>
+                </div>
+            </li>
+            <li class="prize-demo">
+                <div class="prize-detail">
+                    <p class="prize-rank">Demo Day 大奖</p>
+                    <p>奖金20000元</p>
+                    <p>极客公园创新大会通票</p>
+                </div>
+            </li>
+            <li class="offer">
+                <div class="prize-detail">
+                    <p class="prize-rank">职业机会</p>
+                    <p>全体获奖团队成员有机会获得BAI及案例公司的实习或全职offer</p>
+                </div>
+            </li>
+        </ul>
+        </div>
+
     </div>
-    <div class="row">
-        <p class="left col-sm-3">案例挑战赛</p>
-        <div class="col-sm-3">
-            <img src="image/prize-1.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">一等奖x1</p>
-            <p>价值100000元的硅谷游学之旅</p>
-            <p>极客公园创新大会通票</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-3">
-            <img src="image/prize-2.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">二等奖x1</p>
-            <p>奖金30000元</p>
-            <p>极客公园创新大会通票</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-3">
-            <img src="image/prize-3.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">三等奖x1</p>
-            <p>奖金20000元</p>
-            <p>极客公园创新大会通票</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-3">
-            <img src="image/prize-potentional.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">最具潜力奖</p>
-            <p>贝塔斯曼旗下Udacity提供的价值15000的硅谷技术培训课程</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-3">
-            <img src="image/prize-potentional.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">职业机会</p>
-            <p>全体获奖团队成员有机会获得BAI及案例公司的实习或全职offer</p>
-        </div>
-    </div>
-    <div class="row">
-        <p class="left col-sm-3">Demo Day 大奖</p>
-        <div class="col-sm-3">
-            <img src="image/prize-demo.png">
-        </div>
-        <div class="right col-sm-6">
-            <p style="font-size: 18px;">一等奖x1</p>
-            <p>奖金60000元</p>
-            <p>奖励：极客公园创新大会通票</p>
-            <p>职业：BAI实习或全职offer</p>
-            <p>投资：获得BAI投资的可能</p>
-        </div>
-    </div>
+
 </section>
-        <!--主办方-->
-<section id="sponsors">
-    <div class="row">
-        <h2>主办方</h2>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 left">
-            <div class="sponsors-div">
-                <p style="padding-top:280px;padding-left: 65px;padding-right: 60px;">贝塔斯曼集团是一家拥有将近200年历史的全球领先的传媒集团，在世界上50多个国家和地区开展广播电视（RTL集团）、图书出版（企鹅兰登书屋）、杂志期刊（古纳雅尔）、音乐版权（BMG）、商业服务（欧唯特）、印刷（Bertelsmann Printing Group）、在线教育（Bertelsmann Education Group）、投资（Bertelsmann Investments）等业务。</p>
+        <!--嘉宾评委-->
+        <section id="jury">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>嘉宾评委</h2>
+                </div>
+                <div class="col-xs-12">
+                    <h3>JURY MEMBERS</h3>
+                </div>
+                <div class=" col-xs-4 col-sm-3">
+                    <div class="jury-div">
+                        <p style="padding-top:280px;">林宜立</p>
+                        <p style="padding-top:5px;">出门问问产品团队负责人</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="jury-div">
+                        <p style="padding-top:280px">徐菁</p>
+                        <p style="padding-top:10px">百度凡尔纳计划发起人</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="jury-div">
+                        <p style="padding-top:280px">Dan Wong</p>
+                        <p style="padding-top:5px">Rokid 创始人 | CEO</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="jury-div">
+                        <p style="padding-top:280px;">陈朝阳</p>
+                        <p style="padding-top:5px;">大朋VR 创始人 | CEO</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="jury-div">
+                        <p style="padding-top:280px;">张萌</p>
+                        <p style="padding-top:5px;">猿圈 创始人 | CEO</p>
+                    </div>
+                </div>
             </div>
+
+        </section>
+        <!--主办方-->
+<section id="founders">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>主办方</h2>
         </div>
-        <div class="col-sm-6 right">
-            <div class="sponsors-div">
-                <p style="padding-top:280px;padding-left: 65px;padding-right: 60px;">极客公园成立于2010年，是中国创新者的大本营。通过对前沿科技的观察报道，业界一流的线下活动，众筹孵化等全方位的创业服务，极客公园汇聚了中国最广大的创新、创业人群。在内容媒体、会展公关、创业服务三大业务线协同发展下，极客公园帮助中国创业者更有效率的探索未来，链接更多的资源，让优秀的科技创业公司得以更快速的成长。
+        <div class="col-xs-12">
+            <h3>FOUNDERS&PARTNERS</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 left">
+            <div class="founders-div">
+                <p>
+                    贝塔斯曼集团是一家拥有近200年历史的全球领先的传媒集团，旗下业务包括：广播电视（RTL集团）、图书出版（企鹅兰登书屋）、杂志期刊（古纳雅尔）、音乐版权（BMG）、商业服务（欧唯特）、印刷（Bertelsmann Printing Group）、在线教育（Bertelsmann Education Group）、投资（Bertelsmann Investments）等业务。
+                </p>
+                <p>
+                    贝塔斯曼旗下顶级风投BAI（贝塔斯曼亚洲投资基金），活跃于大中华地区的私募股权投资市场，管理资金超过10亿美元。主要投资领域包括电商、企业服务、在线教育、媒体平台、社交网络、广告技术、硬件创新、金融服务和游戏等，迄今在大中华区投资了易车、凤凰网、蘑菇街、优信、Keep、探探等70多家公司。BAI有专项天使基金BetaFund，还在中国投资了晨兴创投、创新工场、联创策源、凯旋创投和愉悦资本五家基金。
                 </p>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-6 right">
+            <div class="founders-div">
+                <p>极客公园成立于2010年，是中国创新者的大本营。通过对前沿科技的观察报道，业界一流的线下活动，众筹孵化等全方位的创业服务，汇聚了中国最广大的创新、创业人群。在内容媒体、会展公关、创业服务三大业务线协同发展下，极客公园帮助中国创业者更有效率的探索未来，链接更多的资源，让优秀的科技创业公司得以更快速的成长。“极客”概念在极客公园的推动下，已经成为推动社会发展的重要力量。极客公园亦成为中国极客群体交流互助的首选平台和中国创新人群成长道路上的重要伙伴。</p>
+            </div>
         </div>
+    </div>
 
 </section>
 <!--合作伙伴-->
 <section id="partner">
     <div class="row">
-        <h2>合作伙伴</h2>
+        <div class="col-xs-12">
+            <h2>合作伙伴</h2>
+        </div>
     </div>
     <div class="row" style="margin-bottom: 50px;">
-        <div class="col-sm-3 col-sm-offset-3" >
-            <img src="image/tsinghua.png" >
+        <div class="col-xs-12" style="text-align: center;">
+            <img src="image/tsinghua.png"style="margin-left:90px" >
+            <img src="image/udacity.png" style="margin-top: 30px;margin-left:90px">
         </div>
-        <div class="col-sm-3">
-            <img src="image/udacity.png" style="margin-top: 30px;">
-        </div>
+        <!--<div class="col-xs-6">-->
+            <!--<img src="image/tsinghua.png" >-->
+        <!--</div>-->
+        <!--<div class="col-xs-6">-->
+            <!--<img src="image/udacity.png" style="margin-top: 30px;">-->
+        <!--</div>-->
     </div>
 </section>
-
-</div>
-</div>
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <h2>联系我们</h2>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div style="float:right;">
-                <img src="image/wechat-logo.png" >
-                <img src="image/WechatQR.png" >
-                <div class="footer-text">
-                <div>贝塔斯曼招聘</div>
-                <div>微信号二维码</div>
+        <!--相关声明-->
+        <section id="policy">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>相关声明</h2>
                 </div>
+                <div class="col-xs-12">
+                    <h3>POLICY</h3>
+                </div>
+                <p class="left col-xs-12 col-sm-2 ">知识产权</p>
+                <p class="right col-xs-12 col-sm-10 ">参赛者所提交的参赛方案以及应用程序，知识产权归参赛者所有。参赛者授权主办方为本次大赛目的免费使用其参赛方案及应用程序，以便主办方能够对参赛者提交的参赛方案进行测试和评估，并用于广告宣传及公开展示。</p>
+                <div class="left col-xs-12 col-sm-2 ">
+                    <p>用户个人</p>
+                    <p style="margin-top: -10px">信息保护</p>
+                </div>
+                <div class="right col-xs-12 col-sm-10">
+                    <p>参赛者必须保证提供的信息真实、准确、合法、有效。参赛者同意在大赛报名过程中所登记的个人参赛信息可能会在以下方面被处理、储存或使用：</p>
+                    <p>1）为大赛目的和与大赛相关的情况而使用，包括但不限于为大赛做广告或宣传；</p>
+                    <p>2）应用于与大赛有关的、将在以后发布的公关材料中；</p>
+                    <p>一旦参赛，参赛者同意并且被视为已同意受上述隐私政策的约束。参赛者的个人资料也会被主办方留档保存。未经参赛者同意，主办方不会向除上述(1)和(2)目的以外的任何公司、组织或个人披露其个人信息，但法律法规另有规定的除外。</p>
+                </div>
+                <p class="left col-xs-12 col-sm-2">获奖说明</p>
+                <p class="right col-xs-12 col-sm-10">获奖团队须确定一名代表成员接受奖励。参赛团队应自行负责在其成员之间分配和分发奖金与奖品，主办方对此将不承担任何责任。
+                    奖金个人所得税将由获奖者承担，主办方代扣代缴。</p>
+                <p class="left col-xs-12 col-sm-2">法律责任</p>
+                <div class="right col-xs-12 col-sm-10">
+                    <p>若参加大赛的作品侵犯第三方合法权益，导致第三方向主办方投诉，或者依法向主办方索赔，或者将主办方起诉至人民法院、投诉至相应的行政机关的，视为参赛者根本违约，主办方有权要求参赛者承担下列违约责任：</p>
+                    <p>1）将其已经收到的奖金全部返还主办方；</p>
+                    <p>2）支付金额相当于其已经收到的奖金的违约金；</p>
+                    <p>3）赔偿主办方由此遭受的一切经济损失，包括但不限于主办方依法支付第三方的赔偿金、依法向相应的行政机关缴纳的罚金和诉讼费、律师费等其他合理开支。</p>
+                </div>
+                <p class="left col-xs-12 col-sm-2">申诉与受理</p>
+                <div class="right col-xs-12 col-sm-10">
+                    <p>1）申诉－参赛者对不符合本赛项规定的设备、工具、软件，有失公正的评判、奖励，以及对工作人员的违规行为等，均可提出申诉。
+                        具体操作是参赛者向大赛官方邮箱hr@bertelsmann.com发送申诉邮件，详细描述申诉内容。</p>
+                    <p>对于各阶段比赛结果的申诉，应在结果公布后48小时内提出，超过时效将不予受理。</p>
+                    <p>2）受理－组委会负责受理比赛中出现的申诉并进行处理，以保证比赛的顺利进行和大赛结果的公平、公正。</p>
+                    <p>申诉方如认为处理意见不合理，可向赛项执行委员会提出复诉。</p>
+                    <p>参赛者不得因提起申诉或对申诉处理意见不服而停止比赛或滋事，否则按弃权处理，大赛不因申诉事件而组织重赛。</p>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <img src="image/weibologo.png" >
-                <div class="footer-text">
-                <div>@贝塔斯曼人才贝出</div>
-                <div>weibo.com/tmbfamily</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div style="float:left;">
-                <img src="image/maillogo.png" style="margin-top: 2px;" >
-                <div class="footer-text">
-                <div>hr@bertelsmann.com</div>
+        </section>
+        <footer>
+            <div class="footer-triangle-bg">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>联系我们</h2>
                     </div>
+                    <div class="col-xs-12 col-sm-2 col-sm-offset-3">
+                        <div>
+                            <img src="image/qr.png" >
+                            <div class="footer-text">
+                                <div>扫码关注</div>
+                                <div>官方微信号</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <img src="image/weibologo.png" >
+                        <div class="footer-text">
+                            <div>@贝塔斯曼人才贝出</div>
+                            <div>weibo.com/tmbfamily</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <div>
+                        <img src="image/maillogo.png" style="margin-top: 2px;" >
+                        <div class="footer-text">
+                            <div>hr@bertelsmann.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3" style="text-align: center;">
+                    <img style="margin-bottom: 20px" src="image/footer-cobrand.png" >
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5" >
-                <img src="image/techcraftlogo.png"style="float: right;">
-            </div>
-            <div class="col-sm-7">
-                <img src="image/cobrandlogo.png" style="float: left;padding-left: 40px;padding-top: 20px">
-            </div>
-        </div>
     </div>
 
+
 </footer>
+</div>
+
+
 <!--modal-->
 <div class="jDialog" id="about-schedule-modal">
     <div class="content">
@@ -472,9 +524,79 @@
             <button class="button" data-dismiss="JDialog" >关闭</button>
         </div>
     </div>
+    <!--<div class="col-xs-12">-->
+        <!--<div class="col-xs-4">-->
+            <!---->
+        <!--</div>-->
+        <!--<div class="col-xs-4">-->
+        <!--</div>-->
+        <!--<div class="col-xs-4">-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
-<!--<script src="bootstrap/js/jquery-1.11.3.min.js"></script>-->
+
+    <div class="jDialog" id="nav-enroll">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>报名参赛</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <h3>REGISTER</h3>
+                    </div>
+                    <div class="col-xs-4">
+                     <p>
+                         案例挑战赛
+                     </p>
+                    </div>
+                    <div class="col-xs-8">
+                        <p>
+                            组队或个人报名参赛均可，团队规模不限，团队成员可来自不同地区、学校或专业；团队可配备一位学院指导教师或业界导师。可同时报名案例挑战赛和Demo Day。
+                        </p>
+                        <p>
+                            发送作品及团队成员介绍至hr@bertelsmann.com。
+                        </p>
+                        <p>
+                            作品要求
+                        </p>
+                        <p>申请阶段</p>
+                        <p>若作品或方案属于硬件类别，需提交10页以内大小不超过5M的产品介绍文档（DOCX、PDF格式）或BP（PPTX、PDF格式），并注明截至报名的产品开发阶段；如能一并提交设计图纸（建议DWG格式）或视频演示等其他展示性作品，可帮助评委更好地了解项目。
+                        </p>
+                        <p>若作品或方案属于软件类别，需提交10页以内大小不超过5M的作品介绍文档（DOCX、PDF格式）或BP（PPTX、PDF格式），如作品为app则鼓励一并提交demo。</p>
+                        <p>决赛阶段：</p>
+                        <p>前8强入围选手基于初赛阶段所提交方案进一步完善参赛作品。</p>
+                        <p>若作品或方案属于硬件类别，需根据设计图纸进一步开发产品原型并实现相关功能，在决赛现场汇报展示。产品材料由团队自行提供，如某项具体成本团队难以负担，可申请主办方协商资助；</p>
+                        <p>若作品或方案属于软件类别，需根据源代码将产品的具体解决方案进一步完善，在决赛现场汇报展示。</p>
+                    </div>
+                    <div class="col-xs-4">
+                        <p>
+                            Demo Day
+                        </p>
+                    </div>
+                    <div class="col-xs-8">
+                        <p>
+                            必选项：发送个人或团队中英文简历至hr@bertelsmann.com。
+                        </p>
+                        <p>
+                            加分项：想从众多申请中脱颖而出？随简历一并提交你在以下领域的相关作品或方案吧！
+                        </p>
+                        <P><span>机器人：</span>工业级机器人、家庭服务机器人、陪伴机器人、智能玩具、无人机、模拟助手等</P>
+                        <P><span>智能生活：</span>智能家居、可穿戴设备、智慧城市方案、虚拟现实、增强现实等</P>
+                        <P><span>交通出行：</span>智能汽车、无人驾驶方案、车联网等</P>
+                        <P><span>数据安全：</span>监控平台方案、黑客反入侵方案等</P>
+                        <P><span>云服务：</span>云存储解决方案、云计算方案等</P>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="bootstrap/js/jquery-1.11.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/bootsnav.js"></script>
 <script src="js/jdialog.min.js"></script>
@@ -486,6 +608,12 @@
         allowOverlay: true,
         animationType: 'fade-in'
     });
+    $("#nav-enroll").jDialog({
+        skinClassName: 'demo',
+        allowOverlay: true,
+        animationType: 'fade-in'
+    });
+
 
     $('.tabs').tabslet();
 
