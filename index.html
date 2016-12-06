@@ -19,7 +19,7 @@
 
 
 
-
+<div id="scrolling-wrapper">
 <!--Navigation-->
 
 <header class="navbar navbar-static-top navbar-fixed-top">
@@ -45,13 +45,31 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-center">
-                    <li><a href=#about>关于TechCraft</a></li>
-                    <li><a href="#detail">大赛详情</a></li>
-                    <li><a href="#schedule">活动日程</a></li>
-                    <li><a href="#prize">奖项设置</a></li>
-                    <li><a href="#jury">嘉宾评委</a></li>
-                    <li><a href="#partner">合作伙伴</a></li>
+                <ul class="nav navbar-nav navbar-center" id="nav-list">
+                    <li id="tab-about">
+                        <div class="triangle"></div>
+                        <a href=#about>关于TechCraft</a>
+                    </li>
+                    <li id="tab-detail">
+                        <div class="triangle"></div>
+                        <a href="#detail">大赛详情</a>
+                    </li>
+                    <li id="tab-schedule">
+                        <div class="triangle"></div>
+                        <a href="#schedule">活动日程</a>
+                    </li>
+                    <li id="tab-prize">
+                        <div class="triangle"></div>
+                        <a href="#prize">奖项设置</a>
+                    </li>
+                    <li id="tab-jury">
+                        <div class="triangle"></div>
+                        <a href="#jury">嘉宾评委</a>
+                    </li>
+                    <li id="tab-partner">
+                        <div class="triangle"></div>
+                        <a href="#partner">合作伙伴</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -92,8 +110,11 @@
        <div class="container banner-content">
            <div class="row">
                <img class="col-xs-8 col-xs-offset-2" id="logo" src="image/about-icon.png">
-               <h1 class="col-xs-12">科技驱动商业未来</h1>
-               <img class="col-xs-6 col-xs-offset-3" id="cobrand" src="image/about-cobrand.png">
+               <div class="col-xs-12">
+                   <h1>科技驱动商业未来</h1>
+               </div>
+
+               <img class="col-xs-4 col-xs-offset-4" id="cobrand" src="image/about-cobrand.png">
            </div>
 
        </div>
@@ -106,7 +127,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2>关于TechCraft</h2>
-                    <div class="triangle"></div>
+                    <div class="div-triangle"></div>
                 </div>
                 <div class="col-xs-12">
                     <h3>ABOUT</h3>
@@ -150,7 +171,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2>大赛详情</h2>
-                    <div class="triangle"></div>
+                    <div class="div-triangle"></div>
                 </div>
                 <div class="col-xs-12">
                     <h3>INFORMATION</h3>
@@ -163,11 +184,18 @@
 
 
             <div class="tabs">
-                    <ul>
-                    <li class="col-xs-4"><a href="#challenge"><span>案例挑战赛</span></a></li>
-                    <li class="col-xs-4"><a href="#demoDay"><span>Demo Day 大赛</span></a></li>
-                    <li class="col-xs-4"><a href="#enroll"><span>观众报名</span></a></li>
-                    </ul>
+                <ul>
+                    <li class="col-xs-3">
+                        <a href="#challenge"><span>案例挑战赛</span></a>
+                    </li>
+                    <li class="col-xs-3">
+                        <a href="#demoDay"><span>Demo Day 大赛</span></a>
+                    </li>
+                    <li class="col-xs-3">
+                        <a href="#enroll"><span>观众报名</span></a>
+                    </li>
+                </ul>
+
 
                 <div id="challenge">
                     <div class="row">
@@ -242,15 +270,15 @@
                 <div id="enroll">
                     <div class="row">
                         <div class="left col-xs-12 ">
-                            <div class="enroll-prize">
-                                <p class="ticket" style="font-size: 42px;color: #7ED321">早鸟票</p>
+                            <div class="enroll-ticket">
+                                <p class="ticket" style="font-size: 36px;color: #7ED321">早鸟票</p>
                                 <p class="content">TechCraft论坛｜决赛展示｜黑科技体验区｜交流酒会及颁奖典礼</p>
                                 <p class="notice">*报名成功后可收到电子票，活动当天凭票入场</p>
                             </div>
                         </div>
                         <div class="right col-xs-12">
-                            <div class="enroll-prize">
-                                <p class="ticket" style="font-size: 42px;color: #45CCDD">极客票</p>
+                            <div class="enroll-ticket">
+                                <p class="ticket" style="font-size: 36px;color: #45CCDD">极客票</p>
                                 <p class="content">TechCraft论坛｜决赛展示｜黑科技体验区</p>
                                 <p class="notice">*报名成功后可收到电子票，活动当天凭票入场</p>
                             </div>
@@ -264,7 +292,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
                     <h2>活动日程</h2>
-                    <div class="triangle"></div>
+                    <div class="div-triangle"></div>
                     <h3>SCHEDULE</h3>
                 </div>
                 <div class="col-xs-6 col-sm-4">
@@ -286,7 +314,7 @@
     <div class="row">
         <div class="col-xs-12">
             <h2>奖项设置</h2>
-            <div class="triangle"></div>
+            <div class="div-triangle"></div>
         </div>
         <div class="col-xs-12">
             <h3>AWARD</h3>
@@ -352,7 +380,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2>嘉宾评委</h2>
-                    <div class="triangle"></div>
+                    <div class="div-triangle"></div>
                 </div>
                 <div class="col-xs-12">
                     <h3>JURY MEMBERS</h3>
@@ -405,7 +433,7 @@
     <div class="row">
         <div class="col-xs-12">
             <h2>主办方</h2>
-            <div class="triangle"></div>
+            <div class="div-triangle"></div>
         </div>
         <div class="col-xs-12">
             <h3>FOUNDERS&PARTNERS</h3>
@@ -459,7 +487,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>相关声明</h2>
-                        <div class="triangle"></div>
+                        <div class="div-triangle"></div>
                     </div>
                     <div class="col-xs-12">
                         <h3>POLICY</h3>
@@ -498,38 +526,37 @@
                 </div>
             </section>
             <footer>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2>联系我们</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-2 col-sm-offset-3">
-                        <div>
-                            <img src="image/qr.png" style="height: 80px" >
+                <div class="footer-triangle-bg">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>联系我们</h2>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-sm-offset-2 footer-cell unit">
+                            <img src="image/qr.png" style="width:78px;" >
                             <div class="footer-text">
                                 <div>扫码关注</div>
                                 <div>官方微信号</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-2">
-                        <img src="image/weibologo.png" >
-                        <div class="footer-text">
-                            <div>@贝塔斯曼人才贝出</div>
-                            <div>weibo.com/tmbfamily</div>
+                        <div class="col-xs-12 col-sm-3 footer-cell unit">
+                            <img src="image/weibologo.png" >
+                            <div class="footer-text">
+                                <div>@贝塔斯曼人才贝出</div>
+                                <div>weibo.com/tmbfamily</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-2">
-                        <div>
-                            <img src="image/maillogo.png" >
+                        <div class="col-xs-12 col-sm-3 footer-cell unit">
+                            <img src="image/maillogo.png" style="margin-top: 2px;" >
                             <div class="footer-text">
                                 <div>hr@bertelsmann.com</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3" style="text-align: center;margin-top:50px">
-                        <img style="margin-bottom: 20px" src="image/footer-cobrand.png" >
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 footer-cell cobrand-pic" style="margin-top:30px">
+                        <img src="image/footer-cobrand.png" >
                     </div>
                 </div>
+
 
 
             </footer>
@@ -616,12 +643,16 @@
         </div>
     </div>
 
+</div>
+
 
 <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/bootsnav.js"></script>
 <script src="js/jdialog.min.js"></script>
+<script src="js/isInViewport.min.js"></script>
 <script src="js/jquery.tabslet.min.js"></script>
+
 
 <script>
     $("#about-schedule-modal").jDialog({
@@ -638,6 +669,49 @@
 
     $('.tabs').tabslet();
 
+    // viewport controll
+    function removeActiveTab() {
+        $('#nav-list li').removeClass('tab-active-show')
+    }
+    var SHOW = ':in-viewport(-200)';
+
+    var $banner = $('#banner');
+    var $about = $('#about');
+    var $detail = $('#detail');
+    var $schedule = $('#schedule');
+    var $prize = $('#prize');
+    var $jury = $('#jury');
+    var $partner = $('#partner');
+
+    $('#scrolling-wrapper')[0].onwheel = function() {
+        if ($banner.is(SHOW)) {
+            removeActiveTab()
+        }
+        if ($about.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-about').addClass('tab-active-show')
+        }
+        if ($detail.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-detail').addClass('tab-active-show')
+        }
+        if ($schedule.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-schedule').addClass('tab-active-show')
+        }
+        if ($prize.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-prize').addClass('tab-active-show')
+        }
+        if ($jury.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-jury').addClass('tab-active-show')
+        }
+        if ($partner.is(SHOW)) {
+            removeActiveTab()
+            $('#tab-partner').addClass('tab-active-show')
+        }
+    }
 
 </script>
 </body>

@@ -91,7 +91,7 @@ header ul {
 }
 .banner-content h1{
     display: inline-block;
-    font-size: 68px;
+    font-size: 64px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,15 +129,15 @@ header ul {
 
 #about h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight:100;
 }
 #about p{
-    font-size:18px;
-    color: #ffffff;
+    font-size:16px;
+    color: #FAFAFA;
     margin: 20px 0 ;
     font-weight:100;
 }
@@ -145,14 +145,14 @@ header ul {
 
 
 #about h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
 }
 
-.triangle{
+.div-triangle{
     display: inline-block;
     padding-left: 30px;
     width: 0;
@@ -192,7 +192,7 @@ header ul {
 /*detail*/
 #detail h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     font-weight:400;
     margin-bottom:20px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
@@ -200,8 +200,8 @@ header ul {
     -webkit-text-fill-color: transparent;
 }
 #detail h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -209,8 +209,8 @@ header ul {
 
 #detail p#approach{
     margin-top: 50px ;
-    font-size:28px;
-    color: #ffffff;
+    font-size:25px;
+    color: #FAFAFA;
 }
 
 
@@ -218,43 +218,64 @@ header ul {
 
 
 .tabs li {
+    position: relative;
     text-align: center;
     /*border-top:1px solid transparent;*/
     /*border-left:1px solid #E5E5E5;*/
     /*border-right:1px solid #E5E5E5;*/
-    border-bottom: 2px solid #E5E5E5;
-    /*margin: 0 0;*/
+    border-bottom: 2px solid transparent;
     display: inline-block;
     background:transparent;
+    margin: 10px;
+    z-index: 1;
 }
+.tabs li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    width: 70%;
+    height: 2px;
 
+    background-color: #3AC2D2;
+}
 .tabs a {
-    color: #ccc;
+    position: relative;
+    z-index: 2;
+    color: #3AC2D2;
     display: block;
     font-size: 18px;
     font-weight: 300;
     padding: 14px 24px;
     text-decoration: none;
 }
+.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    margin: auto;
 
-.tabs li:hover {
-    color: #cccccc;
-    background: transparent;
-    border-bottom: 2px solid #7ED321;
-}
+    transform: skewX(30deg);
 
-.tabs li:hover a {
-    color: #cccccc;
+    background-color: #7ED321;
 }
 
 .active {
     background: #7ED321;
-    border-bottom: 2px solid #7ED321 !important;
+}
+.active::after {
+    display: none;
+}
+.active a {
+    color: #000;
 }
 
-.active a {
-    color: #7ED321 ;
-}
 
 
 /*tab案例*/
@@ -297,7 +318,7 @@ header ul {
     color: #7ED321;
 }
 
-#enroll .enroll-prize{
+#enroll .enroll-ticket{
     background-image: url(../image/enroll-bg.png);
     background-repeat: no-repeat;
     margin-top: 58px;
@@ -309,12 +330,12 @@ header ul {
     padding-top: 38px;
 }
 #enroll p.content{
-    font-size:24px;
+    font-size:20px;
     padding-left: 142px;
     color: #ffffff;
 }
 #enroll p.notice{
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 142px;
     color: #727272;
 }
@@ -354,7 +375,7 @@ header ul {
 }
 #schedule h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -362,8 +383,8 @@ header ul {
 }
 
 #schedule h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -374,12 +395,13 @@ header ul {
 }
 
 #schedule-hover{
-    padding-left: 20px;
+    padding-left: 40px;
+    display: block;
     border: none;
     background:none;
     color: #45CCDD;
     outline: none;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 
@@ -390,7 +412,7 @@ header ul {
 
 #prize h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -398,8 +420,8 @@ header ul {
 }
 
 #prize h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -417,7 +439,7 @@ header ul {
 }
 #prize p{
     font-size:18px;
-    color: #ffffff;
+    color: #FAFAFA;
 }
 #prize .prize-rank{
     font-size:24px;
@@ -459,7 +481,7 @@ header ul {
 }
 #jury h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -467,8 +489,8 @@ header ul {
 }
 
 #jury h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -496,7 +518,7 @@ header ul {
 }
 #founders h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -504,8 +526,8 @@ header ul {
 }
 
 #founders h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -522,10 +544,10 @@ header ul {
     background-repeat: no-repeat;
 }
 .founders-div{
-    color: #ffffff;
+    color: #FAFAFA;
     padding-top:160px;
     padding-right: 70px;
-    font-size: 19px;
+    font-size: 16px;
 
 }
 
@@ -539,7 +561,7 @@ header ul {
     text-align: center;
     font-weight:400;
     margin:40px 0;
-    color: #ffffff;
+    color: #FAFAFA;
 }
 
 /*policy*/
@@ -547,12 +569,12 @@ header ul {
     margin-top:80px;
 }
 #policy p{
-    color: #ffffff;
+    color: #FAFAFA;
 }
 
 #policy h2{
     display: inline-block;
-    font-size: 50px;
+    font-size: 45px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -560,8 +582,8 @@ header ul {
 }
 
 #policy h3{
-    font-size:30px;
-    color: #ffffff;
+    font-size:28px;
+    color: #FAFAFA;
     margin-top: -10px;
     font-weight:100;
 
@@ -586,36 +608,32 @@ header ul {
 
 
 /*footer*/
-footer{
-    margin-top: 98px;
-    margin-bottom: 128px;
-}
 
 .footer-triangle-bg{
     /*background-image: url(../image/);;*/
 }
 
+footer {
+    margin-top: 90px;
+    margin-bottom: 140px;
+}
 footer h2 {
     font-size: 20px;
-    text-align : center;
+    text-align: center;
     margin:40px auto;
     color: #45CCDD;
 }
-
-
-footer .col-sm-4 img{
-    margin-bottom:10px;
-    height: 65px;
+footer .unit {
+    height: 70px;
 }
-
-footer .footer-text{
-    padding-top: 10px;
-    margin-bottom: 20px;
-    color:#ffffff;
+.footer-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-footer .col-sm-2{
-    text-align: center;
+.footer-text {
+    margin: 0 20px;
+    color: #ddd;
 }
 
 /*底部三角形*/
@@ -670,3 +688,27 @@ footer .col-sm-2{
     /*padding-top: 80px;*/
     /*margin-top: -80px;*/
 /*}*/
+
+/* navbar viewport controll */
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-width: 21px;
+    border-top-color: #7ED321;
+    transform: translateY(-15px);
+    opacity: 0;
+
+    transition: 0.3s all;
+}
+
+.tab-active-show .triangle {
+    transform: translateY(0);
+    opacity: 1;
+}
