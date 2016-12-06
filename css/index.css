@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-.container{
-
-}
 body{
     font-family: "Calibri","Microsoft YaHei","微软雅黑";
     /*padding-top: 80px;*/
@@ -71,6 +68,7 @@ header ul {
     background-image:url("../image/banner-bg.png");
     background-repeat: no-repeat;
     background-position-x: center;
+
 }
 
 .banner-triangle{
@@ -91,7 +89,7 @@ header ul {
 }
 .banner-content h1{
     display: inline-block;
-    font-size: 64px;
+    font-size: 54px;
     background: -webkit-linear-gradient(left,#45CCDD,#53A0FE 50%,#53A0FE 51%,#81C53C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -107,16 +105,19 @@ header ul {
     background-image: url(../image/repeat-bg.png);
     background-repeat: repeat-y;
     background-position-x: center;
+    background-position-y: 80px;
 
 }
 
 /*about*/
 #about{
     height: 1086px;
+    padding-top: 80px;
+    margin-top: -80px;
 }
 .about-triangle-bg{
     height: 1086px;
-    background-image: url(../image/about-triangle-bg.png);;
+    background-image: url(../image/about-triangle-bg.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -125,6 +126,7 @@ header ul {
     background-image: url(../image/repeat-bg.png);
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: 80px;
 }
 
 #about h2{
@@ -137,7 +139,7 @@ header ul {
 }
 #about p{
     font-size:16px;
-    color: #FAFAFA;
+    color: #a9a9a9;
     margin: 20px 0 ;
     font-weight:100;
 }
@@ -154,7 +156,7 @@ header ul {
 
 .div-triangle{
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 24px;
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
@@ -190,6 +192,10 @@ header ul {
 /*}*/
 
 /*detail*/
+#detail{
+    padding-top: 80px;
+    margin-top: -320px;
+}
 #detail h2{
     display: inline-block;
     font-size: 45px;
@@ -210,7 +216,7 @@ header ul {
 #detail p#approach{
     margin-top: 50px ;
     font-size:25px;
-    color: #FAFAFA;
+    color: #a9a9a9;
 }
 
 
@@ -281,14 +287,14 @@ header ul {
 /*tab案例*/
 #challenge .left{
     font-size: 14px;
-    color: #ffffff;
+    color: #a9a9a9;
     margin-top:60px;
 }
 
 #challenge .right{
     font-size: 14px;
     /*padding-top: 2px;*/
-    color:#ffffff;
+    color:#a9a9a9;
     margin-top:60px;
 }
 
@@ -303,14 +309,14 @@ header ul {
 
 #demoDay .left{
     font-size: 14px;
-    color: #ffffff;
+    color: #a9a9a9;
     margin-top:60px;
 }
 
 #demoDay .right{
     font-size: 14px;
     /*padding-top: 2px;*/
-    color:#ffffff;
+    color:#a9a9a9;
     margin-top:60px;
 }
 
@@ -332,46 +338,18 @@ header ul {
 #enroll p.content{
     font-size:20px;
     padding-left: 142px;
-    color: #ffffff;
+    color: #a9a9a9;
 }
 #enroll p.notice{
     font-size: 18px;
     padding-left: 142px;
     color: #727272;
 }
-/*#demoDay .left{*/
-    /*text-align: right;*/
-    /*margin-top: 25px;*/
-    /*padding-right: 50px;*/
-    /*font-size: 20px;*/
-/*}*/
 
-/*#demoDay .right{*/
-    /*font-size:14px;*/
-    /*margin-top: 30px;*/
-/*}*/
-
-/*#demoDay .left-first{*/
-    /*margin-top: 70px;*/
-    /*font-size: 20px;*/
-/*}*/
-
-/*#demoDay .right-first img{*/
-    /*margin: 20px;*/
-/*}*/
-
-/*#enroll .left{*/
-    /*margin-top: 25px;*/
-    /*text-align: right;*/
-    /*font-size: 20px;*/
-/*}*/
-
-/*#enroll .right{*/
-    /*margin-top: 30px;*/
-    /*text-align: left;*/
-/*}*/
 #schedule {
     margin-top: 138px;
+    padding-top: 80px;
+    margin-top: 30px;
 }
 #schedule h2{
     display: inline-block;
@@ -384,7 +362,7 @@ header ul {
 
 #schedule h3{
     font-size:28px;
-    color: #FAFAFA;
+    color: #a9a9a9;
     margin-top: -10px;
     font-weight:100;
 
@@ -408,6 +386,8 @@ header ul {
 /*奖项设置*/
 #prize{
     margin-top: 86px;
+    padding-top: 80px;
+    margin-top: -80px;
 }
 
 #prize h2{
@@ -421,7 +401,7 @@ header ul {
 
 #prize h3{
     font-size:28px;
-    color: #FAFAFA;
+    color: #ffffff;
     margin-top: -10px;
     font-weight:100;
 
@@ -439,7 +419,7 @@ header ul {
 }
 #prize p{
     font-size:18px;
-    color: #FAFAFA;
+    color: #a9a9a9;
 }
 #prize .prize-rank{
     font-size:24px;
@@ -477,7 +457,8 @@ header ul {
 
 /*jury*/
 #jury{
-    margin-top:164px;
+    padding-top: 80px;
+    margin-top: 88px;
 }
 #jury h2{
     display: inline-block;
@@ -497,7 +478,6 @@ header ul {
 }
 
 #jury .jury-div{
-    background-image: url(../image/jury-bg.png);
     background-repeat: no-repeat;
     background-position-x:center;
     height:330px;
@@ -505,16 +485,44 @@ header ul {
 }
 
 #jury .jury-odd{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #jury .jury-even{
-    margin-top: 60px;
+    margin-top: 80px;
+}
+
+#jury .jury-longyu{
+    background-image: url(../image/jury-longyu.png);
+}
+
+#jury .jury-zhangpeng{
+    background-image: url(../image/jury-zhangpeng.png);
+}
+#jury .jury-lizhifei{
+    background-image: url(../image/jury-lizhifei.png);
+}
+#jury .jury-jixinhua{
+    background-image: url(../image/jury-jixinhua.png);
+}
+
+#jury .jury-div .name{
+    font-size: 28px;
+    color: #ffffff;
+    padding-left: 20px
+}
+
+#jury .jury-div .detail{
+    font-size:14px;
+    color: #ffffff;
+    padding-left: 20px;
+    margin-top:-5px;
 }
 
 /*founders*/
 #founders {
-    margin-top: 100px;
+    padding-top: 80px;
+    margin-top:20px;
 }
 #founders h2{
     display: inline-block;
@@ -544,7 +552,7 @@ header ul {
     background-repeat: no-repeat;
 }
 .founders-div{
-    color: #FAFAFA;
+    color: #a9a9a9;
     padding-top:160px;
     padding-right: 70px;
     font-size: 16px;
@@ -555,6 +563,10 @@ header ul {
 /*.founders-div{*/
 /*margin-top: 120px;*/
 /*}*/
+#partner{
+    padding-top: 80px;
+    margin-top: -80px;
+}
 
 #partner h2{
     font-size: 36px;
@@ -567,9 +579,11 @@ header ul {
 /*policy*/
 #policy{
     margin-top:80px;
+    padding-top: 80px;
+    margin-top: -80px;
 }
 #policy p{
-    color: #FAFAFA;
+    color: #a9a9a9;
 }
 
 #policy h2{

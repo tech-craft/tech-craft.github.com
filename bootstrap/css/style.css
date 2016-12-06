@@ -167,7 +167,7 @@ nav.navbar ul.nav > li > a:hover,
 nav.navbar ul.nav > li.active > a:hover,
 nav.navbar ul.nav li.active > a,
 nav.navbar li.dropdown ul.dropdown-menu > li a:hover{
-    color: #FEA02C;
+    color: #7ED321;
 }
 
 
@@ -175,7 +175,7 @@ nav.navbar li.dropdown ul.dropdown-menu > li a:hover{
 @media(max-width:920px){
     nav.navbar .dropdown .megamenu-content .col-menu ul > li > a:hover,
     nav.navbar.navbar-dark .dropdown .megamenu-content .col-menu .title:hover{
-        color: #FEA02C ;
+        color: #7ED321 ;
     }
 }
 
